@@ -171,10 +171,10 @@ def lwlr(testPoint, xMat, yMat, k = 1.0):
 
 if __name__ == '__main__':
     plotDataSet()
-    # plotRegression(standRegres)
-    # plotRegression(gradAscent)
-    # plotRegression(randgradAscent)
-    plotlwlrRegression()
+    # # plotRegression(standRegres)
+    # # plotRegression(gradAscent)
+    # # plotRegression(randgradAscent)
+    # plotlwlrRegression()
 
 
 
@@ -191,7 +191,7 @@ data=[
 
 #生成X和y矩阵
 dataMat = np.array(data)
-X = dataMat[:,0:1]   # 变量x
+X = dataMat[:,0].reshape(-1,1)   # 变量x
 y = dataMat[:,1]   #变量y
 
 
@@ -200,6 +200,7 @@ y = dataMat[:,1]   #变量y
 model = LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
 model.fit(X, y)   # 线性回归建模
 print('系数矩阵:\n',model.coef_)
+print('常数B:\n',model.intercept_)
 print('线性回归模型:\n',model)
 # 使用模型预测
 predicted = model.predict(X)
