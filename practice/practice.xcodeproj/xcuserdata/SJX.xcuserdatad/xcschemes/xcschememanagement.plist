@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>python_learning.xcscheme</key>
+		<key>practice.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6FE4D0E31C4E761500B1FDF1</key>
+		<key>6FB2F3B81FCAAD0C00953FA8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

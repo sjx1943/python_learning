@@ -6,61 +6,74 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		6FA6CC192014CF7500F9F64C /* module.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = module.py; sourceTree = "<group>"; };
+		6FB2F3BF1FCAAFCC00953FA8 /* practice.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; lineEnding = 0; path = practice.py; sourceTree = "<group>"; };
+		6FB2F3C11FCAB1F100953FA8 /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
-		6FE4D0DE1C4E761500B1FDF1 = {
+		6FB2F3B31FCAAD0C00953FA8 = {
 			isa = PBXGroup;
 			children = (
+				6FA6CC192014CF7500F9F64C /* module.py */,
+				6FB2F3C11FCAB1F100953FA8 /* test.py */,
+				6FB2F3BF1FCAAFCC00953FA8 /* practice.py */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		6FE4D0E31C4E761500B1FDF1 /* python_learning */ = {
+		6FB2F3B81FCAAD0C00953FA8 /* practice */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 6FE4D0E61C4E761500B1FDF1 /* Build configuration list for PBXLegacyTarget "python_learning" */;
+			buildConfigurationList = 6FB2F3BB1FCAAD0C00953FA8 /* Build configuration list for PBXLegacyTarget "practice" */;
 			buildPhases = (
 			);
-			buildToolPath = /Users/SJX/Library/Enthought/Canopy_64bit/User/bin/python;
+			buildToolPath = /usr/bin/python;
+			buildWorkingDirectory = "/Users/SJX/Desktop/python project/python_learning";
 			dependencies = (
 			);
-			name = python_learning;
+			name = practice;
 			passBuildSettingsInEnvironment = 1;
-			productName = python_learning;
+			productName = practice;
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
-		6FE4D0DF1C4E761500B1FDF1 /* Project object */ = {
+		6FB2F3B41FCAAD0C00953FA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Shi Junxiao";
 				TargetAttributes = {
-					6FE4D0E31C4E761500B1FDF1 = {
-						CreatedOnToolsVersion = 7.2;
+					6FB2F3B81FCAAD0C00953FA8 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 6FE4D0E21C4E761500B1FDF1 /* Build configuration list for PBXProject "python_learning" */;
+			buildConfigurationList = 6FB2F3B71FCAAD0C00953FA8 /* Build configuration list for PBXProject "practice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6FE4D0DE1C4E761500B1FDF1;
+			mainGroup = 6FB2F3B31FCAAD0C00953FA8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FE4D0E31C4E761500B1FDF1 /* python_learning */,
+				6FB2F3B81FCAAD0C00953FA8 /* practice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		6FE4D0E41C4E761500B1FDF1 /* Debug */ = {
+		6FB2F3B91FCAAD0C00953FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -100,7 +113,7 @@
 			};
 			name = Debug;
 		};
-		6FE4D0E51C4E761500B1FDF1 /* Release */ = {
+		6FB2F3BA1FCAAD0C00953FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -133,7 +146,7 @@
 			};
 			name = Release;
 		};
-		6FE4D0E71C4E761500B1FDF1 /* Debug */ = {
+		6FB2F3BC1FCAAD0C00953FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUGGING_SYMBOLS = YES;
@@ -146,7 +159,7 @@
 			};
 			name = Debug;
 		};
-		6FE4D0E81C4E761500B1FDF1 /* Release */ = {
+		6FB2F3BD1FCAAD0C00953FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -159,24 +172,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FE4D0E21C4E761500B1FDF1 /* Build configuration list for PBXProject "python_learning" */ = {
+		6FB2F3B71FCAAD0C00953FA8 /* Build configuration list for PBXProject "practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FE4D0E41C4E761500B1FDF1 /* Debug */,
-				6FE4D0E51C4E761500B1FDF1 /* Release */,
+				6FB2F3B91FCAAD0C00953FA8 /* Debug */,
+				6FB2F3BA1FCAAD0C00953FA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FE4D0E61C4E761500B1FDF1 /* Build configuration list for PBXLegacyTarget "python_learning" */ = {
+		6FB2F3BB1FCAAD0C00953FA8 /* Build configuration list for PBXLegacyTarget "practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FE4D0E71C4E761500B1FDF1 /* Debug */,
-				6FE4D0E81C4E761500B1FDF1 /* Release */,
+				6FB2F3BC1FCAAD0C00953FA8 /* Debug */,
+				6FB2F3BD1FCAAD0C00953FA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6FE4D0DF1C4E761500B1FDF1 /* Project object */;
+	rootObject = 6FB2F3B41FCAAD0C00953FA8 /* Project object */;
 }

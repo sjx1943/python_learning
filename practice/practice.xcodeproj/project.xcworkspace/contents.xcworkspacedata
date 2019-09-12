@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:python_learning.xcodeproj">
+      location = "self:practice.xcodeproj">
    </FileRef>
 </Workspace>
