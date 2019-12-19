@@ -55,6 +55,8 @@ class Solution:
                     res=dp[i]
 
         return res
+#
+# S = Solution()
+# print(S.f([1,2,3]))
 
-S = Solution()
-print(S.f([1,2,3]))
+# Research environment functions
