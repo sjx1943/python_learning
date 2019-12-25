@@ -20,43 +20,47 @@ class ListNode:
 
 class Solution:
 
-    def swap(self,nums,i,j):
-        tmp=nums[i]
-        nums[i]=nums[j]
-        nums[j]=tmp
+    def reverse(self,head):
+        cur=head
+        prev=None
+        while cur:
+            nxt=cur.next
+            cur.next = prev
+            prev = cur
+            cur=nxt
+        return prev
 
-    def reverse(self,nums,start):
-        i=start
-        j=len(nums)-1
-        while i<j:
-            self.swap(nums,i,j)
-            i+=1
-            j-=1
-        return nums
+    def reorderList(self, head: ListNode) -> None:
+        """
+        Do not return anything, modify head in-place instead.
+        """
+        # dummy = defaultdict(lambda:None(0))
+        # dummy[None]=None
+        dummy = ListNode(0)
+        dummy.next = head
+        slow = dummy
+        fast = dummy
+        while fast is not None and fast.next is not None:
+            slow = slow.next
+            fast = fast.next.next
+
+        left = head
+        right = slow.next
+        slow.next = None
+        right = self.reverse(right)
+        pt = dummy
+        while left or right:
+            if left:
+                dummy.next = left
+                left=left.next
+                dummy = dummy.next
+            if right:
+                dummy.next = right
+                right = right.next
+                dummy = dummy.next
 
 
-
-    def f(self,s):
-
-        n=len(s)
-        if n==0:
-            return 0
-        dp=[0]*n
-        res=0
-        for i in range(n):
-            if i>0 and s[i]==")":
-
-                if s[i-1]=="(":
-                    dp[i]=dp[i-2]+2
-                elif s[i-1]==")" and i-dp[i-1]-1 >=0 and s[i-dp[i-1]-1]=="(":
-                    dp[i]=dp[i-1]+2+dp[i-dp[i-1]-2]
-
-                if dp[i]>res:
-                    res=dp[i]
-
-        return res
-#
-# S = Solution()
-# print(S.f([1,2,3]))
+S = Solution()
+print(S.f([[2],[3,4],[6,5,7],[4,1,8,3]]))
 
 # Research environment functions
