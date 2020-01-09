@@ -36,27 +36,21 @@ class Solution:
 
 
 
-    def f(self,s):
+    def f(self,numRows):
+        traingle= []
+        for row_num in range(numRows):
+            row = [None for _ in range(row_num+1)]
+            row[0]=1
+            row[-1]=1
 
-        n=len(s)
-        if n==0:
-            return 0
-        dp=[0]*n
-        res=0
-        for i in range(n):
-            if i>0 and s[i]==")":
+            for j in range(1,len(row)-1):
+                row[j] = traingle[row_num-1][j-1]+traingle[row_num-1][j]
 
-                if s[i-1]=="(":
-                    dp[i]=dp[i-2]+2
-                elif s[i-1]==")" and i-dp[i-1]-1 >=0 and s[i-dp[i-1]-1]=="(":
-                    dp[i]=dp[i-1]+2+dp[i-dp[i-1]-2]
+            traingle.append(row)
 
-                if dp[i]>res:
-                    res=dp[i]
-
-        return res
+        return traingle
 #
-# S = Solution()
-# print(S.f([1,2,3]))
+S = Solution()
+print(S.f(5))
 
 # Research environment functions
