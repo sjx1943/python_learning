@@ -36,21 +36,21 @@ class Solution:
 
 
 
-    def f(self,numRows):
-        traingle= []
-        for row_num in range(numRows):
-            row = [None for _ in range(row_num+1)]
-            row[0]=1
-            row[-1]=1
+    def f(self,prices):
+        minprice = float('inf')
+        maxprofit = 0
+        for i in range(len(prices)):
 
-            for j in range(1,len(row)-1):
-                row[j] = traingle[row_num-1][j-1]+traingle[row_num-1][j]
+            if prices[i]<minprice:
+                minprice = prices[i]
+            elif prices[i] - minprice>maxprofit:
 
-            traingle.append(row)
+                maxprofit = prices[i]-minprice
+        return maxprofit
 
-        return traingle
+
 #
 S = Solution()
-print(S.f(5))
+print(S.f([7,1,5,3,6,4]))
 
 # Research environment functions
