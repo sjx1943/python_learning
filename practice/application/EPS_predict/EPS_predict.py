@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,7 +17,7 @@ def least_squares(x, y):
 
 datasets_Year = []
 datasets_EPS = []
-fr = open('just_bb/01810.txt', 'r')
+fr = open("01810.txt", 'r',)
 lines = fr.readlines()
 for line in lines[1:]:
     items = line.strip().split('\t')
